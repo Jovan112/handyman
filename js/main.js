@@ -100,32 +100,32 @@ const myServices = [
     name: "General Repairs", 
     description: "Fix doors, windows, furniture, and small household issues.", 
     features:["Doors","Windows","Furniture"],
-     image: "../assets/img/wrench.png" },
+     image: "assets/img/wrench.png" },
   { category: "Electrical", 
     name: "Electrical & Plumbing", 
     description: "Outlet repairs, wiring, pipes, and faucets.",
      features:["Wiring","Pipes","Faucets"], 
-     image: "../assets/img/electrical & plumbing.png" },
+     image: "assets/img/electrical & plumbing.png" },
   { category: "Painting",
      name: "Painting & Carpentry",
       description: "Wall painting and custom woodwork.", 
       features:["Painting","Woodwork","Furniture"], 
-      image: "../assets/img/Painting & Carpentry.png" },
+      image: "assets/img/Painting & Carpentry.png" },
   { category: "Security",
      name: "Home Security",
      description: "Protect your home with smart security systems and 24/7 monitoring.", 
      features:["Alarm System", "Video Surveillance", "Smart Access"],
-      image: "../assets/img/security.png" },
+      image: "assets/img/security.png" },
   { category: "HVAC", 
     name: "HVAC & Heating",
      description: "Maintain optimal temperature and comfort with smart heating and climate control solutions.",
       features:["Heating Systems", "Air Conditioning", "Ventilation"],
-       image: "../assets/img/hvac&heating.png" },
+       image: "assets/img/hvac&heating.png" },
   { category: "Smart Home Setup",
      name: "24/7 Technical Support",
       description: "Professional home service assistance available anytime for maintenance, repairs, and emergency support.", 
       features:["Emergency Assistance", "Maintenance Support", "Expert Technicians"], 
-      image: "../assets/img/smarthome.png" }
+      image: "assets/img/smarthome.png" }
 ];
 
 const serviceContainer = document.getElementById("service-list");
@@ -357,3 +357,4 @@ $(document).ready(function() {
   $backToTopBtn.click(function() {
     $("html, body").animate({ scrollTop: 0 }, "smooth");
   });
+
