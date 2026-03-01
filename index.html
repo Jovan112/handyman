@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="icon" type="image/png" href="assets/img/wrench.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta name="description" content="Professional handyman services in Belgrade. Reliable repairs, painting,
+   electrical and plumbing work.">
+<meta name="author" content="Jovan Vicentijevic">
+<meta name="keywords" content="handyman, repair, painting, plumbing, electrical, Belgrade">
+
+  <title>Handyman</title>
+  
+</head>
+<body>
+  <div class="navbar-container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Handyman</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+         
+        </div>
+      </div>
+    </nav>
+  </div>
+
+ <section class="hero-section">
+  <div class="hero-background"></div>
+  <div class="hero-content text-center">
+    <h2 class="hero-title">
+      Reliable and professional handyman services you can trust.
+    </h2>
+    <p class="hero-text">
+      We handle all types of home repairs, maintenance, and small installations with care and attention to detail.
+      From quick fixes to complete solutions, we make sure every job is done efficiently, safely, and on time.
+    </p>
+    <a href="#contact" class="btn btn-danger mt-3">
+  Book a Service <i class="bi bi-arrow-down"></i>
+</a>
+    </div>
+  </section>
+
+ <section id="aboutus" class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+
+        <h2 class="section-title">About Us</h2>
+
+        <div class="about-text">
+
+          <p class="section-text">
+            At Handyman Services, we are dedicated to providing high-quality home repairs and maintenance. 
+            Our skilled team handles everything from minor fixes to full renovations with professionalism and care.
+          </p>
+
+          <p class="section-text">
+            Our mission is to make your life easier by taking care of all your household repair needs quickly, safely, and efficiently.
+          </p>
+
+          <!-- DODATNI TEKST -->
+          <div id="moreText" class="hidden-text">
+            <p class="section-text">
+              We pride ourselves on reliability, transparent pricing, and customer satisfaction.
+              Our experienced professionals ensure every project is completed with attention to detail
+              and long-lasting quality.
+            </p>
+          </div>
+
+          
+          <button id="toggleBtn" class="btn btn-danger mt-3 d-block mx-auto">
+            Show More
+          </button>
+
+        </div>
+      </div>
+
+      <div id="rhimage" class="col-lg-6 text-center mt-4 mt-lg-0">
+        <img src="assets/img/handyman 2.jpg" alt="Handyman team" class="img-fluid rounded">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="service">
+  <div id="about-sections"></div> 
+
+  
+  <section id="wrapper" class="wrapper alt style1">
+    <div class="inner">
+      <h2 class="major">Our Services</h2>
+      <p>We provide a variety of services to help your business or home run smoothly.</p>
+
+      <div class="col-12">
+        <label for="service-category">Category</label>
+        <select name="service-category" id="service-category">
+          <option value="">All</option>
+        </select>
+      </div>
+
+      <section class="features" id="service-list"></section>
+      <a href="#" class="button primary small fit" id="load-more-services">See More</a>
+    </div>
+  </section>
+</section>
+
+  <section id="faq"></section>
+
+
+<section id="contact" class="bg-light py-5">
+  <div class="container">
+    <div class="row align-items-stretch">
+
+      <div class="col-md-6 mb-4">
+        <h2 class="mb-3">Our Location</h2>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.358858881597!2d20.481839876105326!3d44.81425337107081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0xc17ed71f59ac4725!2z0JLQuNGB0L7QutCwIElDVCDRiNC60L7Qu9Cw!5e0!3m2!1ssr!2srs!4v1725014743917!5m2!1ssr!2srs" 
+            >
+          </iframe>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-container">
+          <h2 class="form-title mb-3">Contact Form</h2>
+          <form id="myForm" novalidate>
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+              <div class="error" id="errorFirstName"></div>
+            </div>
+
+            <div class="mb-2">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+              <div class="error" id="errorLastName"></div>
+            </div>
+
+            <div class="mb-2">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter email">
+              <div class="error" id="errorEmail"></div>
+            </div>
+
+            <div class="mb-2">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+              <div class="error" id="errorPhone"></div>
+            </div>
+
+            <div class="mb-2">
+              <label for="optionSelect" class="form-label">Select Option</label>
+              <select class="form-select" id="optionSelect">
+                <option value="">Choose</option>
+                <option value="General Repairs">General Repairs</option>
+                <option value="Electrical & Plumbing">Electrical & Plumbing</option>
+                <option value="Painting & Carpentry">Painting & Carpentry</option>
+                <option value="Home & security">Home & security</option>
+                <option value="HVAC & Heating">HVAC & Heating</option>
+                <option value="Tehnical support">Tehnical support</option>
+              </select>
+              <div class="error" id="errorSelect"></div>
+            </div>
+
+            <div class="mb-2">
+              <label class="form-label">Gender</label>
+              <div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+              </div>
+              <div class="error" id="errorGender"></div>
+            </div>
+
+            <button type="submit" class="btn btn-danger w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<footer class="myfooter bg-dark text-light pt-5">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6 mb-4">
+        <h5 class="myfooter-title mb-3">Contact Information</h5>
+        <p><strong>Phone:</strong> +381 60 123 4567</p>
+        <p><strong>Email:</strong> info@handymanservices.com</p>
+        <p><strong>Location:</strong> Belgrade, Serbia</p>
+
+        <div class="myfooter-social mt-3">
+          <a href="https://www.facebook.com/?locale=sr_RS" target="_blank" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+          <a href="https://x.com/" target="_blank" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+          <a href="https://rs.linkedin.com/" target="_blank" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+           <a href="Dokumentacija.pdf" target="_blank" class="text-light"><i class="bi bi-book"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <h5 class="myfooter-title mb-3">Why Choose Our Company</h5>
+        <p>
+          We provide reliable, high-quality handyman services with a strong focus on customer satisfaction.
+          Our experienced professionals deliver fast, affordable, and long-lasting solutions for your home and business.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="myfooter-bottom text-center border-top pt-3 mt-3 d-flex flex-column align-items-center gap-2">
+    <a href="rss.xml" class="text-light text-decoration-none"> 
+      <i class="bi bi-rss"></i> RSS
+    </a>
+    <a href="sitemap.xml" class="text-light text-decoration-none"> 
+      <i class="bi bi-diagram-3"></i> Sitemap
+    </a>
+    <p class="mb-0">© 2026 Handyman Services. All rights reserved.</p>
+  </div>
+</footer>
+
+<button id="backToTop" title="Go to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+ 
+</body>
+</html>

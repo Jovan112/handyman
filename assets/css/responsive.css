@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+    /* Prikazivanje hamburger menija na manjim ekranima */
+    .hamburger-menu {
+      display: flex;
+    }
+  
+    /* Sakrivanje menija kada nije aktivan */
+    .right nav ul {
+      display: none;  /* Sakriva navigaciju */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      padding: 20px;
+    }
+  
+    /* Kada je navigacija aktivna (kliknuta na hamburger), prikazuje se */
+    .right nav ul.active {
+      display: flex;  /* Prikazuje listu */
+    }
+  }
+  @media (max-width: 768px) {
+    .flight-hero {
+      flex-direction: column; /* Raspored u kolonu */
+      align-items: center;
+    }
+  
+    .flight-left {
+      max-width: 90%; /* Povećava širinu teksta */
+      text-align: center; /* Centriranje teksta */
+    }
+  
+    .flight-buttons {
+      justify-content: center; /* Centriranje dugmadi */
+    }
+  }
